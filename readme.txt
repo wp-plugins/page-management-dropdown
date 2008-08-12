@@ -1,6 +1,6 @@
 === Page Management Dropdown ===
 Contributors: jaschaephraim
-Donate link: http://jaschaephraim.com/
+Donate link: http://jaschaephraim.com/wordpress/
 Tags: admin, page, pages, menu, dropdown, cms
 Requires at least: 1.5
 Tested up to: 2.6
@@ -10,9 +10,9 @@ Adds a dropdown admin menu containing links to edit each of your pages. Must be 
 
 == Description ==
 
-Ideal for WordPress as a CMS, Page Management Dropdown creates an admin menu that contains a link to edit each of your published pages, write a new page, and manage pages.
+Ideal for using WordPress as a CMS, Page Management Dropdown creates a "Pages" admin menu that contains a link to edit each of your published pages. It also has menu items to write a new page, and to manage pages.
 
-This will **only** work when used in conjunction with any dropdown admin menu plugin, such as:
+This will *only* work when used in conjunction with any dropdown admin menu plugin, such as:
 
 * [WordPress Admin Bar](http://wordpress.org/extend/plugins/wordpress-admin-bar/)
 * [Ozh Admin Dropdown Menu](http://wordpress.org/extend/plugins/ozh-admin-drop-down-menu/)
