@@ -3,8 +3,8 @@
 /*
 Plugin Name: Page Management Dropdown
 Plugin URI: http://jaschaephraim.com/wordpress/
-Description: Adds a link to edit each individual page to the new Pages admin menu.
-Version: 2.2
+Description: Adds a link to edit each individual page to the Pages admin menu.
+Version: 2.3
 Author: Jascha Ephraim
 Author URI: http://jaschaephraim.com/
 
@@ -30,10 +30,11 @@ add_action('admin_menu', 'jeml_page_management_dropdown');
 add_action('admin_head', 'jeml_page_management_dropdown_change_submenu_file');
 
 function jeml_page_management_dropdown() {
-	global $submenu;
+	global $submenu, $wpdb;
 	
-	$pages = get_pages();
+	$pages = $wpdb->get_results("SELECT ID, post_title, post_parent FROM $wpdb->posts WHERE post_type = 'page' AND post_status = 'publish' ORDER BY menu_order ASC, post_title ASC");
 	$indexed_pages = get_page_hierarchy($pages);
+	
 	foreach ($pages as $page) {
 		$indexed_pages[$page->ID] = $page;
 	}
