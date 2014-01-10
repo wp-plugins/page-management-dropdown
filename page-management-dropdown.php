@@ -5,7 +5,7 @@
 Plugin Name: Page Management Dropdown
 Plugin URI: http://jaschaephraim.com/wordpress/
 Description: Adds a link to edit each individual page to the Pages admin menu.
-Version: 2.5
+Version: 2.6
 Author: Jascha Ephraim
 Author URI: http://jaschaephraim.com/
 License: GPL3
