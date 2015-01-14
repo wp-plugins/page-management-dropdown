@@ -5,7 +5,7 @@
 Plugin Name: Page Management Dropdown
 Plugin URI: http://jaschaephraim.com/wordpress/
 Description: Adds a link to edit each individual page to the Pages admin menu.
-Version: 2.6
+Version: 2.7
 Author: Jascha Ephraim
 Author URI: http://jaschaephraim.com/
 License: GPL3
@@ -42,10 +42,10 @@ function jeml_page_management_dropdown() {
 		$parent = $page->post_parent;
 
 		while ( $parent != 0 ) {
-      $indent .= '&nbsp;&nbsp;&nbsp;';
+    	$indent .= '&nbsp;&nbsp;&nbsp;';
 			$parent = $indexed_pages[ $parent ]->post_parent;
 		}
-
+		
 		$submenu[ 'edit.php?post_type=page' ][] = array( $indent . $page->post_title, 'edit_pages', 'post.php?action=edit&post='.$page->ID );
 	}
 }
